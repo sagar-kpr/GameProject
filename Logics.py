@@ -3,11 +3,11 @@ def start_game():
     mat=[[0 for i in range(4)] for j in range(4)]
     return mat
 def add_nbr(mat):
-    row = r.randint(1, 3)
-    col = r.randint(1, 3)
+    row = r.randint(0, 3)
+    col = r.randint(0, 3)
     while mat[row][col] != 0:
-        row = r.randint(1, 3)
-        col = r.randint(1, 3)
+        row = r.randint(0, 3)
+        col = r.randint(0, 3)
     mat[row][col]=2
     return mat
 
