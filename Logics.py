@@ -104,7 +104,7 @@ def status_of_game(mat):
                 return 'Game not over'
     for i in range(3):
         for j in range(3):
-            if (mat[i][j] == mat[i][j+1]) :
+            if (mat[i][j] == mat[i][j+1] or mat[i][j] == mat[i+1][j]) :
                 return 'Game not over'
     for j in range(3) :
         if (mat[3][j] == mat[3][j+1]):
